@@ -78,12 +78,6 @@ img {
 .contact-list:not(:last-child) {
   margin-right: 50px;
 }
-.envelope:hover,
-.smartphone:hover,
-.envelope:focus,
-.smartphone:focus {
-  --env-smart-hov-foc: #2196f3;
-}
 .nav-icon {
   display: flex;
   justify-content: center;
@@ -101,11 +95,12 @@ img {
   margin-right: 10px;
   fill: #757575;
 }
-.envelope:hover,
-.smartphone:hover,
-.envelope:focus,
-.smartphone:focus {
-  fill: var(--env-smart-hov-foc);
+
+.contact-list:hover .envelope,
+.contact-list:focus .envelope,
+.contact-list:hover .smartphone,
+.contact-list:focus .smartphone {
+  fill: #2196f3;
 }
 
 .logo,
@@ -363,10 +358,11 @@ img {
   flex-basis: calc((100% - 30px) / 4);
 }
 .team-icon:hover,
-.team-icon:focus,
-.social:hover,
-.social:focus {
+.team-icon:focus {
   background-color: #2196f3;
+}
+.team-icon:hover .social,
+.team-icon:focus .social {
   fill: #ffffff;
 }
 .clients {
@@ -394,8 +390,8 @@ img {
 .clients-list:focus {
   border-color: #2196f3;
 }
-.client:hover,
-.client:focus {
+.clients-list:hover .client,
+.clients-list:focus .client {
   fill: #2196f3;
 }
 
