@@ -400,7 +400,6 @@ img {
 }
 .contacts {
   background-color: var(--footer-bgc-color);
-  width: 1600px;
 }
 .contact-bottom {
   --address-color: #ffffff;
