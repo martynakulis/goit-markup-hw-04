@@ -55,6 +55,7 @@ img {
 .web-heading .container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .logo {
   margin-top: 24px;
@@ -181,6 +182,7 @@ img {
     url('/images/backgroung-image.jpg');
   max-width: 1600px;
   height: 600px;
+  margin: 0 auto;
 }
 .heading-title {
   color: var(--heading-title-color);
